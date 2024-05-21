@@ -1,0 +1,98 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #1c174d; /* Ganti warna latar belakang body */
+  font-family: "Poppins", sans-serif; /* Ganti jenis font */
+}
+
+body {
+  background-image: url(/image/dd.gif); /* Ganti path/to/your/image.gif dengan path ke gambar GIF Anda */
+  background-size: contain; /* Ukuran gambar sedikit lebih kecil */
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff; /* Warna teks */
+  overflow-x: hidden; /* Hindari horizontal overflow */
+}
+
+nav {
+  background-color: #fff; /* Warna latar belakang navbar dengan transparansi */
+  color: #cad7ed;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  position: fixed; /* Ubah posisi menjadi fixed */
+  top: 0;
+  left: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  right: 0;
+  z-index: 1000;
+  font-size: larger;
+}
+
+/* Style for sidebar (Mobile view) */
+/* Style for sidebar (Mobile view) */
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100%; /* Mengisi seluruh lebar layar pada tampilan mobile */
+    height: auto; /* Tinggi navbar mengikuti konten */
+    padding: 20px 10px; /* Mengurangi padding pada tampilan mobile */
+    overflow-y: auto; /* Mengubah overflow menjadi auto */
+    position: relative; /* Ubah posisi menjadi relative di tampilan mobile */
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Background color for sidebar */
+    z-index: 1000;
+    transform: none; /* Menghapus transformasi */
+  }
+}
+
+.card {
+  margin-left: 10px; /* Tambahkan satuan (px) setelah nilai margin */
+  margin-right: 10px; /* Tambahkan satuan (px) setelah nilai margin */
+  margin-bottom: 20px;
+}
+
+.container {
+  margin-bottom: 100px;
+  margin-top: 120px; /* Atur margin-top sesuai kebutuhan untuk memberikan ruang antara navbar dan kartu-kartu */
+}
+
+.hidden {
+  transform: translateY(100%);
+}
+
+/* Style for navbar links */
+.navbar-nav .nav-link {
+  position: relative;
+}
+
+/* Style for line under navbar links */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* Tinggi garis */
+  bottom: -2px; /* Jarak garis dari teks */
+  left: 0;
+  background-color: #fff; /* Warna garis */
+  transition: width 0.3s ease, left 0.3s ease; /* Animasi lebar dan posisi garis */
+  display: inline-block; /* Menjadikan garis hanya menempati area di bawah teks */
+}
+
+/* Animation for line under navbar links */
+.navbar-nav .nav-link:hover::after {
+  width: 100%; /* Panjang garis saat dihover */
+  left: 0; /* Set posisi garis kembali ke awal */
+}
+
+/* Add this CSS for the hover effect */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}

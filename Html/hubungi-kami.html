@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hubungi Kami</title>
+    <meta name="description" content="Description of your website" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/hubungi.kami.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <style>
+      /* Additional CSS styles can be added here */
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <img
+          class="rounded-circle"
+          src="/image/asd.jpeg"
+          style="height: 75px"
+          width="75px"
+          style="margin-right: 25px" />
+        <a class="navbar-brand" href="index.html" style="margin-left: 20px"
+          >Andi</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentangkami.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Produk</a
+              >
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="Elektrtonik.html"
+                    >Elektronik</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="peralatan-dapur.html"
+                    >Peralatan Dapur</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="Busana.html">Busana</a></li>
+                <li>
+                  <a class="dropdown-item" href="Kosmetik.html">Kosmetik</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeri.html">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hubungi-kami.html">Hubungi Kami</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="custom-table">
+            <table class="table">
+              <tr>
+                <td><b>Andi Muhammad Nauval Ramadhan</b></td>
+              </tr>
+              <tr>
+                <td>
+                  <b
+                    >Perumahan Sarua Permai<br />Jl. Walet Blok E35, RT.3/RW.7,
+                    Benda Baru, Pamulang, South Tangerang City, Banten 15414</b
+                  >
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="custom-box">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.3866377909885!2d106.71672760658825!3d-6.32477122128405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e5673986c097%3A0x96ebd5b55b7f4903!2sMasjid%20Agung%20Sarua%20Permai!5e1!3m2!1sid!2sid!4v1711861843195!5m2!1sid!2sid"
+                  width="100%"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="custom-box">
+            <h2 class="mb-4">Hubungi Kami</h2>
+            <form method="post" action="/php/proses.php">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nama"
+                  name="nama"
+                  required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required />
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  name="subject"
+                  required />
+              </div>
+              <div class="mb-3">
+                <label for="telepon" class="form-label"
+                  >Nomor Telepon/HP:</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telepon"
+                  name="telepon"
+                  required />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan:</label>
+                <textarea
+                  class="form-control"
+                  id="pesan"
+                  name="pesan"
+                  rows="5"
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br />
+    <footer>
+      <div class="container-fluid">
+        <p>&copy; 2024 YourWebsite. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
